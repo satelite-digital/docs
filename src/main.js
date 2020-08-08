@@ -1,5 +1,7 @@
-import greet from "./core/greet"
+import core from "./core/index"
+import helpers from "./helpers/index"
 
-module.exports = {
-	greet
+export default {
+	core,
+	helpers
 }

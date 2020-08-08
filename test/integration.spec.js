@@ -2,7 +2,7 @@ const assert = require('assert');
 const lib = require('..');
 
 function test(input, expected, spec = "Test") {
-    let got = lib.greet(input.name);
+    let got = lib.core.createTree(input.name)
     try{
         assert.equal(got, expected);
         console.log(`\u001B[32mPASS -\u001B[39m ${spec}: got ${JSON.stringify(expected)} as expected`);
